@@ -49,8 +49,8 @@ This repository is intended for my personal portfolio. While it is not open for 
 - LinkedIn: https://linkedin.com/in/yourusername
 - Email: herathliyanagehs@gmail.com
 
-Feel free to connect with me regarding research, collaborations, internships, or professional opportunities.
 
+⭐ Thank you for visiting my portfolio! Feel free to explore my projects and connect with me regarding research, collaborations, internships, or professional opportunities.
 
 ---
 
