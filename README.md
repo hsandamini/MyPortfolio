@@ -35,9 +35,7 @@ The purpose of this portfolio is to:
 
 You can visit my portfolio here:
 
-**🔗 https://yourusername.github.io/portfolio/**
-
-*(Replace with your actual GitHub Pages URL.)*
+**🔗 https://hsandaminiportfolio.netlify.app/**
 
 
 ## 🤝 Contributions
@@ -46,9 +44,10 @@ This repository is intended for my personal portfolio. While it is not open for 
 
 ## 📬 Connect With Me
 
-- **GitHub:** https://github.com/yourusername
-- **LinkedIn:** https://linkedin.com/in/yourusername
-- **Email:** your.email@example.com
+- 🌐 Portfolio: https://hsandaminiportfolio.netlify.app/
+- GitHub: https://github.com/hsandamini
+- LinkedIn: https://linkedin.com/in/yourusername
+- Email: herathliyanagehs@gmail.com
 
 Feel free to connect with me regarding research, collaborations, internships, or professional opportunities.
 
