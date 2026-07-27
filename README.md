@@ -12,7 +12,7 @@ This website highlights my journey as a Statistics undergraduate with interests 
 - 🎓 Education & Qualifications
 - 💻 Technical Skills
 - 📊 Research & Academic Projects
-- 🚀 Personal Projects
+- 🚀 Working Experience
 - 🏆 Certificates & Achievements
 - 🎼 Choir Leadership Experience
 - 🤝 Volunteering & Community Service
