@@ -128,16 +128,18 @@
             position: absolute;
             inset: 0;
             z-index: 1;
-            background: linear-gradient(100deg, rgba(5,8,16,0.82) 0%, rgba(5,8,16,0.58) 42%, rgba(5,8,16,0.28) 72%, rgba(5,8,16,0.15) 100%);
+            background:
+                radial-gradient(ellipse at center, rgba(5,8,16,0.72) 0%, rgba(5,8,16,0.58) 45%, rgba(5,8,16,0.42) 100%);
         }
         .hero-inner {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 1rem 2rem;
-            display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: 3rem;
+            display: flex;
+            flex-direction: column;
             align-items: center;
+            text-align: center;
+            gap: 2rem;
             width: 100%;
             position: relative;
             z-index: 2;
@@ -165,6 +167,8 @@
             color: #cbd5e1;
             max-width: 480px;
             line-height: 1.6;
+            margin-left: auto;
+            margin-right: auto;
             opacity: 0;
             animation: fadeUp 0.7s ease 0.4s forwards;
         }
@@ -209,6 +213,7 @@
             justify-content: center;
             align-items: center;
             position: relative;
+            order: -1;
             opacity: 0;
             animation: popIn 0.8s cubic-bezier(0.22,1,0.36,1) 0.35s forwards;
         }
@@ -217,8 +222,8 @@
             to { opacity: 1; transform: scale(1) translateY(0); }
         }
         .portrait-frame {
-            width: 280px;
-            height: 280px;
+            width: 240px;
+            height: 240px;
             border-radius: 28px;
             overflow: hidden;
             border: 6px solid rgba(248,250,252,0.15);
@@ -259,11 +264,7 @@
         }
 
         @media (max-width: 900px) {
-            .hero-inner { grid-template-columns: 1fr; text-align: center; }
-            .hero-text p.tagline { margin: 0 auto; }
-            .hero-cta { justify-content: center; }
-            .hero-visual { order: -1; }
-            .portrait-frame { width: 200px; height: 200px; }
+            .portrait-frame { width: 180px; height: 180px; }
         }
 
         /* ---------------- PAGE SECTIONS ---------------- */
@@ -299,6 +300,29 @@
             padding: 2.5rem;
             border-radius: 16px;
             box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03);
+        }
+
+        .about-flex {
+            display: flex;
+            gap: 2.5rem;
+            align-items: flex-start;
+        }
+        .about-photo {
+            flex-shrink: 0;
+            width: 220px;
+            height: 220px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(15,23,42,0.15);
+            border: 4px solid var(--bg-main);
+            outline: 1px solid #e2e8f0;
+        }
+        .about-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .about-text { flex: 1; min-width: 0; }
+
+        @media (max-width: 700px) {
+            .about-flex { flex-direction: column; align-items: center; text-align: left; }
+            .about-photo { width: 180px; height: 180px; }
         }
 
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
@@ -459,14 +483,19 @@
             <div class="eyebrow">Get to know me</div>
             <h2>About Me</h2>
         </div>
-        <div class="card-panel">
-            <p>I'm H.L.D. Hiruni Sandamini, a final-year undergraduate reading for a BSc (Hons) in Statistics at the Department of Statistics, Faculty of Applied Sciences, University of Sri Jayewardenepura, Sri Lanka.</p>
-            <p>My academic path began with a competitive selection into Mathematics, Statistics, and Economics stream, where I spent my first two years building a broad quantitative foundation from differential equations and linear algebra to microeconomics, macroeconomics, and probability theory. This interdisciplinary grounding sharpened both my analytical thinking and my ability to connect statistical methods to real-world economic and mathematical contexts. At the end of my second year, I was selected to specialize fully in the BSc (Hons) in Statistics degree program, a path I've pursued with a strong academic record across a wide range of statistical disciplines.</p>
-            <p>Over the course of my degree, I've developed particular strength and interest in experimental design, time series analysis, distribution theory, and statistical inference, alongside practical exposure to data analysis and programming with R, regression analysis, medical statistics, actuarial statistics, and stochastic processes. I've consistently performed strongly in my coursework, maintaining high grades in core statistics modules while also excelling in economics and mathematics during my foundation years.</p>
-            <p>I'm passionate about using statistical thinking and data-driven methods to solve meaningful problems, and I'm currently looking to apply this training in research, data analysis, or industry roles where rigorous quantitative reasoning makes a real difference.</p>
-            <div class="contact-strip">
-                <span>📍 Ja-Ela, Sri Lanka</span>
-                <a href="mailto:herathliyanagehs@gmail.com">✉️ herathliyanagehs@gmail.com</a>
+        <div class="card-panel about-flex">
+            <div class="about-photo">
+                <img src="profile.jpg" alt="Hiruni Sandamini">
+            </div>
+            <div class="about-text">
+                <p>I'm H.L.D. Hiruni Sandamini, a final-year undergraduate reading for a BSc (Hons) in Statistics at the Department of Statistics, Faculty of Applied Sciences, University of Sri Jayewardenepura, Sri Lanka.</p>
+                <p>My academic path began with a competitive selection into Mathematics, Statistics, and Economics stream, where I spent my first two years building a broad quantitative foundation from differential equations and linear algebra to microeconomics, macroeconomics, and probability theory. This interdisciplinary grounding sharpened both my analytical thinking and my ability to connect statistical methods to real-world economic and mathematical contexts. At the end of my second year, I was selected to specialize fully in the BSc (Hons) in Statistics degree program, a path I've pursued with a strong academic record across a wide range of statistical disciplines.</p>
+                <p>Over the course of my degree, I've developed particular strength and interest in experimental design, time series analysis, distribution theory, and statistical inference, alongside practical exposure to data analysis and programming with R, regression analysis, medical statistics, actuarial statistics, and stochastic processes. I've consistently performed strongly in my coursework, maintaining high grades in core statistics modules while also excelling in economics and mathematics during my foundation years.</p>
+                <p>I'm passionate about using statistical thinking and data-driven methods to solve meaningful problems, and I'm currently looking to apply this training in research, data analysis, or industry roles where rigorous quantitative reasoning makes a real difference.</p>
+                <div class="contact-strip">
+                    <span>📍 Ja-Ela, Sri Lanka</span>
+                    <a href="mailto:herathliyanagehs@gmail.com">✉️ herathliyanagehs@gmail.com</a>
+                </div>
             </div>
         </div>
     </section>
