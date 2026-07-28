@@ -375,6 +375,25 @@
         .edu-details h3, .exp-details h3 { margin: 0 0 0.2rem 0; font-size: 1.2rem; color: var(--navy); }
         .edu-details p, .exp-details p { margin: 0.2rem 0; color: var(--text-dark); font-weight: 500; }
 
+        .photo-strip {
+            display: flex;
+            gap: 0.7rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .photo-strip img {
+            width: 140px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(15,23,42,0.12);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .photo-strip img:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 8px 18px rgba(15,23,42,0.2); }
+        @media (max-width: 500px) {
+            .photo-strip img { width: calc(50% - 0.35rem); height: 90px; }
+        }
+
         .doc-link {
             display: inline-block; margin-top: 0.6rem; font-size: 0.85rem;
             color: var(--accent); font-weight: 600; text-decoration: none;
@@ -464,11 +483,6 @@
                 <div class="eyebrow">Welcome to my portfolio</div>
                 <h1>Hi, I'm Hiruni Sandamini </span></h1>
                 <p class="tagline">Final-year B.Sc. (Hons) Statistics undergraduate at Faculty of Applied Sciences, University of Sri Jayewardenepura, Sri Lanka.</p>
-            </div>
-            <div class="hero-visual">
-                <div class="portrait-frame">
-                    <img src="profile.jpg" alt="Hiruni Sandamini">
-                </div>
             </div>
         </div>
         <div class="scroll-cue" data-target="about">
@@ -685,6 +699,11 @@
                         <li>Helped organize Quora 3.0, an annual quiz competition for first-year students.</li>
                         <li>Worked with team members to manage event activities and support participant engagement.</li>
                     </ul>
+                    <div class="photo-strip">
+                        <img src="quora-group.jpg" alt="Quora 3.0 organizing team">
+                        <img src="quora-banner.jpg" alt="Quora 2025 Statistics Society banner">
+                        <img src="quora-work.jpg" alt="Preparing for Quora 3.0">
+                    </div>
                 </div>
             </div>
             <div class="exp-item">
@@ -696,6 +715,11 @@
                     <ul>
                         <li>Leading the parish church choir, coordinating rehearsals and guiding members in preparing hymns for services and special occasions.</li>
                     </ul>
+                    <div class="photo-strip">
+                        <img src="choir-1.jpg" alt="Church choir group photo">
+                        <img src="choir-2.jpg" alt="Church choir members">
+                        <img src="choir-3.jpg" alt="Church choir at St. Roche's Church">
+                    </div>
                 </div>
             </div>
         </div>
